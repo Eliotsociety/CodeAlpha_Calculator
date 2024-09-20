@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodeAlpha_CalculatorProject</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Main calculator container -->
+    <div class="calculator">
+      <!-- Display area for showing calculations and results -->
+      <div class="display">
+        <!-- Previous operand (for showing ongoing calculations) -->
+        <div class="previous-operand"></div>
+        <!-- Current operand (main display) -->
+        <div class="current-operand">0</div>
+        <!-- Hover effect line -->
+        <div class="hover-line"></div>
+      </div>
+      <!-- Button grid -->
+      <div class="buttons">
+        <!-- Clear button -->
+        <button data-action="clear">C</button>
+        <!-- Toggle sign button -->
+        <button data-action="toggle-sign">+/-</button>
+        <!-- Percentage button -->
+        <button data-action="percentage">%</button>
+        <!-- Operation buttons -->
+        <button data-action="divide">/</button>
+        <!-- Number buttons -->
+        <button data-number>7</button>
+        <button data-number>8</button>
+        <button data-number>9</button>
+        <button data-action="multiply">×</button>
+        <button data-number>4</button>
+        <button data-number>5</button>
+        <button data-number>6</button>
+        <button data-action="subtract">-</button>
+        <button data-number>1</button>
+        <button data-number>2</button>
+        <button data-number>3</button>
+        <button data-action="add">+</button>
+        <!-- Zero button spans two columns -->
+        <button data-number class="span-two">0</button>
+        <button data-number>.</button>
+        <!-- Equals button -->
+        <button data-action="calculate">=</button>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
